@@ -64,7 +64,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin('build', {}),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
     }),

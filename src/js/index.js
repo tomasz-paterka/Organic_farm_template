@@ -1,2 +1,4 @@
+import 'bootstrap';
 import '../scss/style.scss';
-console.log('hello');
+
+require('../img/logo.png');
