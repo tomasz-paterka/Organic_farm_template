@@ -244,6 +244,7 @@ body {
       justify-content: center;
       align-items: center;
       color: $second-font-color;
+
       @include media-breakpoint-between(xs, md) {
         margin-right: 10px;
       }
@@ -252,11 +253,12 @@ body {
     .navbar-collapse {
       @include media-breakpoint-down(md) {
         position: absolute;
-		    width: 100%;
+        width: 100%;
         margin-top: 9px;
         background-color: rgba(8, 3, 1, 0.95);
         top: 60px;
-		    left: 0;
+        left: 0;
+
         .navbar-nav {
           display: flex;
           justify-content: center;
@@ -272,6 +274,7 @@ body {
       color: $second-font-color;
       padding: 15px 10px;
       margin: 8px 15px;
+
       &:hover {
         color: $nav-link-colors;
       }
@@ -297,73 +300,160 @@ body {
 }
 
 .jumbotron {
-	background-image: url(../img/jumbotron_photo.jpeg);
-	background-position: top center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+  background-image: url(../img/jumbotron_photo.jpeg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 
-	.jumbotron-overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.6;
-		background: $jumbotron-first-color;
-		background: linear-gradient(to bottom, $jumbotron-second-color, $jumbotron-first-color);
-	}
+  .jumbotron-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: $jumbotron-first-color;
+    background: linear-gradient(to bottom, $jumbotron-second-color, $jumbotron-first-color);
+  }
 
-	@include media-breakpoint-down(sm) {
-		padding: 180px 15px;
-	}
+  @include media-breakpoint-down(sm) {
+    padding: 180px 15px;
+  }
 
-	@include media-breakpoint-up(md) {
-		padding: 240px 0;
-	}
+  @include media-breakpoint-up(md) {
+    padding: 240px 0;
+  }
 
-	@include media-breakpoint-up(xl) {
-		padding: 280px 0;
-	}
+  @include media-breakpoint-up(xl) {
+    padding: 280px 0;
+  }
 
-	.jumbotron-text {
-		position: relative;
+  .jumbotron-text {
+    position: relative;
 
-		h1 {
-			&::after {
-				content: ' ';
-				display: block;
-				width: 40px;
-				height: 2px;
-				margin: 15px auto 20px;
-				background-color: $jumbotron-retangle-color;
-			}
-		}
+    h1 {
+      &::after {
+        content: ' ';
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin: 15px auto 20px;
+        background-color: $jumbotron-retangle-color;
+      }
+    }
 
-		h2 {
-			@include media-breakpoint-down(sm) {
-				font-size: 18px;
-			}
+    h2 {
+      @include media-breakpoint-down(sm) {
+        font-size: 18px;
+      }
 
-			@include media-breakpoint-up(md) {
-				font-size: 20px;
-			}
+      @include media-breakpoint-up(md) {
+        font-size: 20px;
+      }
 
-			@include media-breakpoint-up(xl) {
-				font-size: 22px;
-			}
-		}
+      @include media-breakpoint-up(xl) {
+        font-size: 22px;
+      }
+    }
 
-		.btn-jumbtron {
-			@extend .button;
+    .btn-jumbtron {
+      @extend .button;
 
-			&:hover {
-				background-color: $button-hover;
-				border-color: $button-hover;
-			}
-		}
-	}
+      &:hover {
+        background-color: $button-hover;
+        border-color: $button-hover;
+      }
+    }
+  }
+}
+
+.intro-features {
+  padding-top: 0;
+  margin-top: -100px;
+  margin-bottom: 50px;
+
+  .no-gutter {
+    justify-content: center;
+  }
+
+  .intro-features-wrap {
+    z-index: 3;
+    position: relative;
+    background-color: $second-font-color;
+    padding: 5px 20px;
+
+    .min-feature {
+      background-color: $second-font-color;
+      padding: 5px;
+      margin-bottom: 40px;
+
+      h3 {
+        font-size: 24px;
+        color: $h3-intro-color;
+        font-weight: 300;
+        padding: 15px 5px 5px 5px;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      h4 {
+        font-size: 22px;
+        color: $h4-intro-color;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+      }
+    }
+
+    figure {
+      .image {
+        transition: all 0.75s ease-in-out;
+        margin: 0;
+        padding: 0;
+        background: $second-font-color;
+        overflow: hidden;
+        margin-bottom: 15px;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+          &:hover {
+            transform: scale(1.1);
+            box-shadow: 10px 10px 2px $box-shadow-color;
+            z-index: 5;
+          }
+        }
+
+      }
+    }
+  }
+
+  .btn-about {
+    @extend .button;
+    background-color: $about-button;
+    border-color: $about-button;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $about-button-action;
+      border-color: $about-button-action;
+    }
+  }
+
+  .about {
+    margin-top: 40px;
+
+    .about-text {
+      letter-spacing: 0.5px;
+    }
+
+    .modal-body {
+      font-family: 'Roboto', sans-serif;
+    }
+  }
 }
