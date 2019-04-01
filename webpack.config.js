@@ -71,7 +71,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       hash: true,
-      template: 'index.html',
+      template: './src/index.html',
       filename: 'index.html',
       minify: {
         collapseWhitespace: true,
