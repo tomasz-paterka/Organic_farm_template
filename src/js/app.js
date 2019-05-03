@@ -1,7 +1,7 @@
 $(function () {
   'use stricte';
 
-  $('a[href^="#"], .btn-outline-success, .btn-jumbtron').click(function(e) {
+  $('a[href^="#"], .btn-outline-success, .btn-jumbtron').click(function (e) {
     const target = $(this.getAttribute('href'));
     if (target.length) {
       e.preventDefault();
@@ -11,7 +11,7 @@ $(function () {
     };
   });
 
-  $('.owl-carousel').owlCarousel({
+  $('#owl-products').owlCarousel({
     loop: true,
     margin: 0,
     nav: false,
@@ -34,5 +34,23 @@ $(function () {
         items: 4
       }
     }
-  })
+  });
+
+  $('#owl-testimonials').owlCarousel({
+    lazyLoad: true,
+    loop: true,
+    margin: 30,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      720: {
+        items: 2
+      },
+      1140: {
+        items: 3
+      }
+    }
+  });
 });

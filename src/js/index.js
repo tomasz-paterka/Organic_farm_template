@@ -14,3 +14,6 @@ require('../img/cherries.jpg');
 require('../img/horses.jpg');
 require('../img/wine.jpg');
 require('../img/grain.jpg');
+require('../img/client1.jpg');
+require('../img/client2.jpg');
+require('../img/client3.jpg');

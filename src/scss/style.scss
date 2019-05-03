@@ -36,12 +36,12 @@ $form-borders: #eeeeee;
 $footer-hover: #ffe8da;
 
 $grid-breakpoints: ('xs': 0,
-'sm': 576px,
-'md': 768px,
-'lg': 992px,
-'xl': 1200px,
-'xxl': 1440px,
-'xxxl': 1600px);
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1440px,
+  'xxxl': 1600px);
 
 /* RWD mixins
 @include media-breakpoint-up(sm) {
@@ -134,6 +134,14 @@ body {
     font-size: 26px;
     font-family: $second-font;
     margin-top: 10px;
+  }
+  a {
+    color: $main-font-color;
+    text-decoration: none;
+    &:hover {
+      color: $button-hover;
+      text-decoration: none;
+    }
   }
 }
 
@@ -530,25 +538,79 @@ body {
 }
 
 .products-list {
-	padding-top: 70px;
-	padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 100px;
 
-	.fbox {
-		position: relative;
-		border: 1px solid $products-border;
-		padding: 40px 30px 40px 80px;
-		margin-top: 30px;
-	}
+  .fbox {
+    position: relative;
+    border: 1px solid $products-border;
+    padding: 40px 30px 40px 80px;
+    margin-top: 30px;
+  }
 
-	.fa {
-		position: absolute;
-		display: block;
-		left: 26px;
-		top: 45px;
-		font-size: 32px;
-		color: $icons-color;
-	}
-	.price-text {
-		margin-top: 30px;
-	}
+  .fa {
+    position: absolute;
+    display: block;
+    left: 26px;
+    top: 45px;
+    font-size: 32px;
+    color: $icons-color;
+  }
+
+  .price-text {
+    margin-top: 30px;
+  }
+}
+
+.testimonials {
+  background: url(../img/testimonials-bg.jpg) 50% 0 fixed no-repeat;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  margin-bottom: 500px;
+
+  .testimonials-container {
+    padding: 120px 0 60px;
+  }
+  
+  .testimonials-item {
+    padding: 50px 30px 40px 30px;
+    background-color: #fff;
+    border-radius: 4px;
+
+    .testimonials-item-header {
+      margin: 10px 0;
+    }
+
+    .testimonials-img {
+      height: 80px;
+      width: 80px;
+      border-radius: 45px;
+      margin: 0 auto;
+    }
+
+    .fa-star {
+      font-size: 14px;
+      color: #ffbb37;
+    }
+
+    .client-opinion {
+      margin: 0;
+      border-left: 0;
+      .client {
+        padding: 5px 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      p {
+        padding: 10px 0 20px;
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
 }

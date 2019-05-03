@@ -1,2 +1,63 @@
 @import 'core';
 @import 'autoheight';
+
+.owl-nav [class*='owl-'] {
+  color: white;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  &:hover {
+    background: #869791;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.owl-dots {
+  .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+
+    span {
+      width: 14px;
+      height: 14px;
+      margin: 4px;
+      background: #4b361e;
+      display: block;
+      -webkit-backface-visibility: visible;
+      -webkit-transition: opacity 200ms ease;
+      -moz-transition: opacity 200ms ease;
+      -ms-transition: opacity 200ms ease;
+      -o-transition: opacity 200ms ease;
+      transition: opacity 200ms ease;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 7px;
+
+      &:hover {
+        border: solid 2px #4b361e;
+        background: #fff;
+      }
+    }
+  }
+
+  .owl-dot.active {
+    span {
+      border: solid 2px #4b361e;
+      background: #fff;
+    }
+  }
+}
