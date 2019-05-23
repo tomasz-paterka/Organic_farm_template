@@ -21,4 +21,4 @@ require('../img/client3.jpg');
 require('../img/certificate.png');
 require('../img/laurel-wreath-left.png');
 require('../img/laurel-wreath-right.png');
-
+require('../img/map.jpg');

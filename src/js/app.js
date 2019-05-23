@@ -79,4 +79,16 @@ $(function () {
       a = 1;
     }
   });
+
+  $('.map-overlay').on('click', function() {
+    window.open('https://www.google.com/maps/place/62-100+W%C4%85growiec/@52.8127139,16.6374545,9z/data=!4m5!3m4!1s0x47047814d97e9191:0x674b434f830e9037!8m2!3d52.80848!4d17.19966', '_blank');
+  });
+
+  $('.needs-validation').submit(function (e) {
+    if (!this.checkValidity()) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    $(this).addClass('was-validated');
+  });
 });

@@ -427,6 +427,111 @@
     </div>
   </section>
 
+  <section class="map separator top">
+    <span class="arrow-separator"></span>
+    <div class="map-overlay">
+      <div class="container contact-info">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="iconbox">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p class="iconbox-text">Email Address</p>
+                <h5>yourmail@addres.net</h5>
+              </div>
+            </div>
+            <div class="col-md-4 side-borders">
+              <div class="iconbox">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p class="iconbox-text">Phone Number</p>
+                <h5>+(368) 800 576 890</h5>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="iconbox">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <p class="iconbox-text">Location Address</p>
+                <h5>35 Lorem Street, 1000 Ipsum City</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="separator top" id="contact">
+		<div class="container form">
+			<div class="row text-center">
+				<div class="col-lg-12">
+					<h6>stay in touch</h6>
+					<h2>We are interested in hearing from you</h2>
+					<span class="title-separator"></span>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<form id="contactform" method="" class="needs-validation" novalidate>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="name">Your Name</label>
+								<div class="form-group">
+									<input class="form-control" name="name" type="name" id="name" placeholder="" autocomplete="off" required />
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please write you name
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label for="email">Your Email</label>
+								<div class="form-group">
+									<input class="form-control" name="email" type="email" id="email" placeholder="" autocomplete="off" required />
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please write valid email
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<label for="subject">Subject</label>
+								<div class="form-group">
+									<input class="form-control" name="_subject" type="text" id="subject" placeholder="" autocomplete="off"
+									 required />
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please write message subject
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<label for="comments">Your Message</label>
+								<div class="form-group">
+									<textarea class="form-control" type="text" aria-label="With textarea" name="message" cols="40" rows="3" id="comments"
+									 placeholder="" required></textarea>
+									<div class="valid-feedback">
+										Looks good!
+									</div>
+									<div class="invalid-feedback">
+										Please write a message
+									</div>
+								</div>
+								<div id="message"></div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-form" id="submit" value="Send">Send Message</button>
+					</form>
+				</div>
+			</div>
+	</section>
+
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
