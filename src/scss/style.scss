@@ -218,7 +218,7 @@ body {
   height: 42px;
   position: absolute;
   z-index: 5;
-  background-image: url('../img/direction-arrow.png');
+  background-image: url(../img/direction-arrow.png);
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
@@ -227,7 +227,7 @@ body {
 //specific styles
 .navigation {
   padding: 0;
-  background-image: url('../img/header.jpg');
+  background-image: url(../img/header.jpg);
   height: 95px;
   background-position: bottom center;
   background-repeat: repeat-x;
@@ -563,12 +563,11 @@ body {
 }
 
 .testimonials {
-  background: url(../img/testimonials-bg.jpg) 50% 0 fixed no-repeat;
+  background: url(../img/testimonials-bg.jpg) 0 fixed no-repeat;
   height: auto;
   margin: 0 auto;
   width: 100%;
   position: relative;
-  margin-bottom: 500px;
 
   .testimonials-container {
     padding: 120px 0 60px;
@@ -612,5 +611,60 @@ body {
         line-height: 30px;
       }
     }
+  }
+}
+
+.certificate-section {
+  text-align: center;
+  padding: 110px 0;
+
+  .certificate {
+    position: relative;
+    margin-bottom: 30px;
+
+    .certificate-text {
+      color: #534135;
+      font-weight: 600;
+      padding: 20px 10px;
+    }
+  }
+
+  .counter-bg {
+    padding: 0 0 200px;
+    background-image: url(../img/counter-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+  
+  .number {
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  .counter-box {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px 0 28px 0;
+    border-radius: 4px;
+    border: 1px solid #f7f7f7;
+    position: relative;
+  }
+
+  .count {
+    font-size: 36px;
+    
+    padding: 5px 15px;
+    &::after {
+      content: ' ';
+      display: block;
+      width: 40px;
+      height: 1px;
+      margin: 36px auto 0px;
+      background-color: #99d328;
+    }
+  }
+
+  .counter-text {
+    font-size: 18px;
   }
 }

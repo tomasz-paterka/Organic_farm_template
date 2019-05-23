@@ -4,6 +4,7 @@ import './app';
 import '../scss/owl_carousel/owl.carousel.scss';
 import 'owl.carousel';
 
+
 require('../img/logo.png');
 require('../img/intro1.jpg');
 require('../img/intro2.jpg');
@@ -17,3 +18,7 @@ require('../img/grain.jpg');
 require('../img/client1.jpg');
 require('../img/client2.jpg');
 require('../img/client3.jpg');
+require('../img/certificate.png');
+require('../img/laurel-wreath-left.png');
+require('../img/laurel-wreath-right.png');
+
