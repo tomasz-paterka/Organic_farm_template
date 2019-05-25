@@ -147,8 +147,16 @@ body {
 
 .container {
   @include media-breakpoint-up(xxl) {
-    max-width: 1400px;
+    max-width: 1440px;
   }
+}
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 .btn {
@@ -384,15 +392,11 @@ body {
   margin-top: -100px;
   margin-bottom: 50px;
 
-  .no-gutter {
-    justify-content: center;
-  }
-
   .intro-features-wrap {
     z-index: 3;
     position: relative;
     background-color: $second-font-color;
-    padding: 5px 20px;
+    // padding: 5px 20px;
 
     .min-feature {
       background-color: $second-font-color;
@@ -651,9 +655,8 @@ body {
   }
 
   .count {
-    font-size: 36px;
-    
-    padding: 5px 15px;
+    font-size: 20px;
+    padding: 5px 10px;
     &::after {
       content: ' ';
       display: block;
@@ -662,10 +665,17 @@ body {
       margin: 36px auto 0px;
       background-color: #99d328;
     }
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+      padding: 5px 15px;
+    }
   }
 
   .counter-text {
-    font-size: 18px;
+    font-size: 15px;
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -755,6 +765,13 @@ body {
 .form {
 	padding-top: 90px;
 	padding-bottom: 80px;
+
+  .contactform-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 
 	.form-group {
 		margin: 10px 0;
